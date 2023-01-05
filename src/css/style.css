@@ -1,0 +1,397 @@
+.logo {
+    text-align: center;
+    margin: 4rem;
+    position: relative;
+}
+
+.logo h1 {
+    font-family: 'Mistral';
+    font-size: 10rem;
+    font-weight: 100;
+    animation: logo 1.2s ease-in-out;
+    animation-delay: 1s;
+    margin: -1rem 0 1.5rem 0;
+}
+
+@font-face {
+    font-family: 'Mistral';
+    src: url(../fonts/MISTRAL.TTF);
+}
+
+.logo h2, .logo h3 {
+    font-family: 'Medula One', cursive;
+    font-weight: 100;
+    font-size:  5em;
+    height: 4rem;
+}
+
+.logo h2{
+    animation: subtitulo 1s ease;
+    margin-bottom: 8rem;
+}
+
+.logo .subtitulo{
+  margin-top: -2rem;
+}
+
+.logo .faca {
+    max-width: 23rem;
+    margin: 0 auto;
+}
+
+.logo .faca img{
+    background: url(../imagem/faca.svg);    
+}
+
+.logo .faca.cima img{
+    animation: upArrow 1.5s ease-in-out;
+}
+.logo .faca.baixo img{
+    animation: downArrow 1.5s ease-in-out;
+}
+
+/* institucional */
+
+.institucional{
+    text-align: center;
+    position: relative;    
+    animation: millor 1.2s ease-in-out;
+}
+
+.institucional::before{
+    content: '';
+    background-color: rgb(179, 155, 18);
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+.institucional .millor {
+    font-family: 'Poppings', sans-serif;
+    font-size: 2.8rem;
+    padding: 3rem 0;
+    background-color: cornsilk;
+}
+
+.juja{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.juja img{
+    margin: 2rem;
+    padding: 3rem;
+    max-width: 80%;
+    animation: juja 3.5s ease-in-out;
+    filter: drop-shadow(0px 5px 3px black);
+}
+
+.institucional p{
+    animation: logo 1.2s ease-in-out;
+}
+
+.institucional .juja .texto{
+    display: inline-block;
+    max-width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.institucional .juja .texto p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    text-align: justify;
+    margin: 1rem 0;
+    width: 90%;
+}
+
+.institucional .millor span{
+        font-family: 'Lobster', cursive; 
+    text-align: right;
+    color: black;
+    font-size: 3rem;
+    text-shadow: 3px 3px rgb(241, 226, 7);
+}
+
+/* -----------CARDAPIO----------- */
+
+.cardapio{
+    background-color: rgb(89, 190, 221);
+    margin: 5rem;
+    position: relative;
+}
+
+.cardapio .titulo{
+    font-family: 'Lobster', cursive; 
+    background-color: white;
+    color: rgb(89, 190, 221);
+    text-shadow: 1px 1px black;
+    font-size: 6rem;
+    border: 2px solid black;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.cardapio h2, .cardapio h3{
+    font-family: 'Lobster', cursive; 
+    color: white;
+    font-weight: 100;
+    text-shadow: 1px 1px black;
+    font-size: 5rem;
+    padding: 1rem;
+    text-align: center;   
+}
+
+.cardapio h3{
+    background-color: rgb(21, 129, 161);
+    font-size: 2rem;
+    color: white;
+    white-space: nowrap;
+    max-height:5rem ;
+    border-radius: 15px;
+    border: 1px solid white;
+    width: 70%;
+    margin: 0 auto;
+}
+
+input{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+}
+
+.cardapio .pratos .ingredientes .prato ul:nth-child(2) {
+   color: white;
+   padding: .5rem;
+   font-size: 2rem;
+   background-color: transparent;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+   text-shadow: 1px 1px black;
+   border: 2px solid aqua;
+   max-width: 70%;
+}
+
+.cardapio .pratos .ingredientes{
+    display: none;
+}
+
+.cardapio .pratos .ingredientes .prato ul {
+    font-size: 3rem;
+    font-weight: 100;
+    color: white;
+    background-color: rgb(21, 129, 161);
+    width: fit-content;
+    padding: 2.5rem;
+    margin: 1.5rem;
+    border-radius: 15px;
+    font-family: 'Norican', cursive;
+    text-shadow: 1px 1px black;
+    border: 1px solid white;
+    width: 95%;
+    position: relative;
+}
+
+.cardapio .pratos .ingredientes .prato li span{
+    font-size: 1.3rem;
+}
+
+.cardapio .pratos .ingredientes .prato bold{
+    font-size: 1.5rem;
+    background-color: rgb(3, 73, 73);
+    border-radius: 10px;
+    padding: .5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.cardapio .pratos .ingredientes .prato li p{
+    background-color:  rgb(16, 92, 116);
+    border-radius: 15px;
+    width: 70%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid aqua;
+}
+
+.cardapio .pratos input:checked ~ label .ingredientes {
+    display: block;
+}
+
+#Lua{
+    font-size: 1.5rem;
+    background-color: rgb(44, 136, 241);
+    border-radius: 10px;
+    padding: .5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+#selo{
+    background: url(../imagem/selo.png) top right no-repeat;
+    width: 125px;
+    height: 184px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+}
+
+#selo-prato{
+    padding: 1rem;
+    max-width: 60px;
+}
+
+#duo{
+    max-width: 22rem;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+}
+
+.receita-premiada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lagosta{
+    max-width: 22rem;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+}
+
+#delicias-do-mar{
+    max-width: 29rem;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+}
+
+/* ----------Restaurante--------- */
+
+.fotos{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 auto;
+    height: 924px;
+    width: 924px;
+    border: 10px solid white;
+}
+
+.quadro{
+    max-width: 450px;
+}
+
+.peixe{
+    height: 510px;
+    width: 510px;
+    position: absolute;
+    z-index: 2;
+    top: 26vh;
+    left: 6vw;
+    flex: 1;
+    max-width: 50%;
+    margin-left: 5rem;
+    filter: drop-shadow(0px 5px 3px black);
+}
+
+/* ----------Footer--------- */
+
+
+
+footer{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10%;
+    margin: 4rem 0;
+    color: white;
+}
+
+footer h2, footer h3, footer h4{
+    font-family: 'Lobster', cursive; 
+    color: white;
+    font-weight: 100;
+    text-shadow: 1px 1px black;
+    padding: 1rem;
+    text-shadow: 1px 1px black;
+}
+
+footer h2{
+    font-size: 3rem;
+    background-color: orange;
+    text-align: center;
+    border-radius: 15px;
+    width: fit-content;
+    border: 3px solid rgb(226, 6, 6);
+
+}
+footer h3{
+    font-size: 2.5rem;
+}
+footer h4{
+    font-size: 2rem;
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.redes-sociais h3, .redes-sociais h4{
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+.redes-sociais img{
+    width: 50px;
+    
+}
+
+.insta{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.zap{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.gota{
+    font-size: 2rem;
+    background-color: orange;
+    text-align: center;
+    border: 3px solid rgb(226, 6, 6);
+    border-radius: 15px;
+    width: fit-content;
+    font-family: 'Lobster', cursive; 
+    margin: 1rem;
+    padding: 1rem;
+    text-shadow: 1px 1px black;
+}
