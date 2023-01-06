@@ -1,4 +1,171 @@
-@media(max-width:426px) {
+@media(max-width:1025px) {
+/* restaurante */
+
+.fotos {
+    height: 900px;
+    width: 900px;
+}
+
+.quadro {
+    max-width: 440px;
+}
+
+/* footer */
+    
+footer h2,
+footer h3,
+footer h4 {
+    padding: .5rem;
+}
+
+footer h2 {
+    font-size: 2.8rem;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+}
+
+footer h4 {
+    font-size: 1rem;
+}
+
+.redes-sociais img {
+    width: 25px;
+}
+
+.rede-social{
+    margin: .5rem;
+    padding: .5rem;
+    background-color: var(--verde-mais-claro);
+    border: 2px solid var(--verde-mais-escuro);
+    border-radius: 15px;
+}
+
+.instagram{
+    display: flex;
+    margin: .5rem;
+    width: 80%;
+    padding: .5rem;
+    background: url(../imagem/instagram.png) center center no-repeat;
+    background-size: 5%;
+}
+
+.instagram .instagram-slz, .instagram .instagram-atins{
+    display: flex;
+    justify-content: center;
+    background-color: var(--verde-mais-claro);
+    padding: 1rem;
+    border: 2px solid var(--verde-mais-escuro);
+    border-radius: 15px;
+    width: 45%;
+}
+
+.instagram .instagram-slz label, .instagram .instagram-atins label, .rede-social label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.redes-sociais #tigela{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 20%;
+    padding: 2rem;
+}
+
+.redes-sociais #camarao{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 15%;
+    padding: 2rem 0;
+}
+}
+
+@media(max-width:926px) {
+/* restaurante */
+
+.fotos {
+    height: 800px;
+    width: 800px;
+}
+
+.quadro {
+    max-width: 390px;
+}
+    
+/* footer */
+    
+footer h2,
+footer h3,
+footer h4 {
+    padding: .5rem;
+}
+
+footer h2 {
+    font-size: 2.8rem;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+}
+
+footer h4 {
+    font-size: 1rem;
+}
+
+.redes-sociais img {
+    width: 25px;
+}
+
+.rede-social{
+    margin: .5rem;
+    padding: .5rem;
+    background-color: var(--verde-mais-claro);
+    border: 2px solid var(--verde-mais-escuro);
+    border-radius: 15px;
+}
+
+.instagram{
+    display: flex;
+    margin: .5rem;
+    width: 70%;
+    padding: .5rem;
+    background: url(../imagem/instagram.png) center center no-repeat;
+    background-size: 5%;
+}
+
+.instagram .instagram-slz, .instagram .instagram-atins{
+    display: flex;
+    justify-content: center;
+    background-color: var(--verde-mais-claro);
+    padding: 1rem;
+    border: 2px solid var(--verde-mais-escuro);
+    border-radius: 15px;
+    width: 38%;
+}
+
+.redes-sociais #tigela{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 22%;
+    padding: 2rem;
+}
+
+.redes-sociais #camarao{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 15%;
+    padding: 2rem 0;
+}
+}
+    
+    @media(max-width:426px) {
 
     /* logo */
     html {
@@ -41,143 +208,219 @@
         font-family: 'Lobster', cursive; 
     text-align: right;
     color: black;
-    font-size: 3rem;
+    font-size: 30rem;
     text-shadow: 3px 3px rgb(241, 226, 7);
 }
 
 .juja{
-     margin: 1rem 0;
+    margin: 1rem 0;
     display: flex;
     justify-content: space-between;
 }
 
 .juja img{
-    margin: 0;
+    margin: 0 0 3rem 0;
     padding: 0;
-    animation: juja2 2.5s ease-in-out;
-    animation-delay: 0;
+
 }
     /* cardapio */
 
-    .cardapio{
-        background-color: rgb(89, 190, 221);
-        margin: 5rem;
-        position: relative;
-    }
-    
-    .cardapio h2, .cardapio h3{    
-        font-size: 3rem;
-    }
-    
-    .cardapio h3{
-        width: 80%;
-    }
+    .cardapio {
+    margin: 3rem;
+}
 
-    .cardapio .ingredientes>h3{
-        font-size: 2rem;
-    }
-   
-    .cardapio .pratos .ingredientes .prato ul {
-        color: white;
-        background-color: rgb(21, 129, 161);
-        width: fit-content;
-        padding: 2.5rem;
-        margin: 1.5rem;
-        width: 95%;
-        position: relative;
-    }
-    
-    .cardapio .pratos .ingredientes .prato li span{
-        font-size: 1.3rem;
-    }
-    
-    .cardapio .pratos .ingredientes .prato bold{
-        font-size: 1.5rem;
-        background-color: rgb(3, 73, 73);
-        border-radius: 10px;
-        padding: .5rem;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-    }
-    
-    .cardapio .pratos .ingredientes .prato li p{
-        background-color:  rgb(16, 92, 116);
-        border-radius: 15px;
-        width: 70%;
-        font-size: 1.5rem;
-        padding: 1rem;
-        margin: 1rem;
-        border: 1px solid aqua;
-    }
-    
-    .cardapio .pratos input:checked ~ label .ingredientes {
-        display: block;
-    }
-    
-    #Lua{
-        font-size: 1.5rem;
-        background-color: rgb(44, 136, 241);
-        border-radius: 10px;
-        padding: .5rem;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-    }
-    
-    #selo{
-        background-size: 40%;
-    }
-    
-    #selo-prato{
-        padding: 1rem;
-        max-width: 40px;
-    }
-    
-    #duo{
-        max-width: 18rem;
-        top: 30px;
-        right: 0;
-        margin: 1rem;
-    }
-    
-    #lagosta{
-        max-width: 15rem;
-      }
-    
-    #delicias-do-mar{
-        max-width: 26rem;
-    }
+.cardapio .titulo {
+    text-shadow: 3px 1px var(--verde-super-escuro);
+    font-size: 4rem;
+    border: 2px solid var(--verde-super-claro);
+    width: 100%;
+    padding: 1rem;
+}
+
+.cardapio h2,
+.cardapio h3 {
+    font-weight: 100;
+    text-shadow: 1px 1px var(--verde-super-escuro);
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.cardapio h3 {
+    font-size: 1.5rem;
+    max-height: 5rem;
+    border-radius: 12px;
+    border: 1px solid var(--verde-cardapio-borda);
+    width: 70%;
+}
+
+.cardapio .pratos .ingredientes .prato ul {
+    font-size: 2.5rem;
+}
+
+.cardapio .pratos .ingredientes .prato ul:nth-child(2) {
+    padding: 1.2rem;
+    font-size: 1.5rem;
+}
+
+.cardapio .pratos .ingredientes .prato li span {
+    font-size: 1rem;
+}
+
+.cardapio .pratos .ingredientes .prato bold {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.cardapio .pratos .ingredientes .prato li p {
+    font-size: 1.2rem;
+}
+
+#Lua {
+    font-size: 1.2rem;
+}
+
+#selo {
+    background-size: 40%;
+}
+
+#selo-prato {
+    padding: 1rem;
+    max-width: 40px;
+}
+
+#duo {
+    max-width: 15rem;
+}
+
+#lagosta {
+    max-width: 14rem;
+}
+
+#delicias-do-mar {
+    max-width:20rem;
+}
     
 /* restaurante */
 
-.fotos{
-    display: flex;
-    flex-wrap: wrap;
-    border: 5px solid white;
-    margin: auto;
-    max-width: 285px;
-    justify-content: center;
-    align-items: center;
-    height: 280px;
-
+.fotos {
+    height: 400px;
+    width: 400px;
+    border: 6px solid white;
 }
 
-.quadro{
-    width: 130px;
+.quadro {
+    max-width: 194px;
+}
+
+.peixe {
+    top: 12vh;
+    left: 9vw;
+}
+/* footer */
+
+footer {
+    margin-left: 10%;
+    margin: 2rem 0;
+    color: white;
+}
+
+footer h2,
+footer h3,
+footer h4 {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
     padding: .5rem;
 }
 
-.peixe{
-    height: 510px;
-    width: 510px;
-    position: absolute;
-    z-index: 1;
-    top:  11vh;
-    left: 10vw;
-    flex: 1;
-    max-width: 40%;
-    margin-left: 5rem;
-    filter: drop-shadow(0px 5px 3px black);
+footer h2 {
+    font-size: 2rem;
+    border-radius: 12px;
+    width: fit-content;
+    border: 2px solid var(--verde-super-escuro);
+    margin: 1.5rem;
 }
+
+footer h3 {
+    font-size: 1.5rem;
+}
+
+footer h4 {
+    font-size: 1rem;
+}
+
+.redes-sociais {
+    border-radius: 12px;
+    border: 1px solid var(--verde-cardapio-borda);
+    padding: .2rem;
+    margin: 1rem;
+    width: 80%;
+}
+
+.redes-sociais #tigela{
+    bottom: 0;
+    right: 0;
+    width: 28%;
+    padding: 1rem;
+}
+
+.redes-sociais #camarao{
+    bottom:0;
+    left: 0;
+    width: 21%;
+    padding: 1.5rem 0;
+}
+
+.redes-sociais img {
+    width: 25px;
+}
+
+.rede-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    width: 45%;
+    padding: .5rem;
+    background-color: var(--verde-mais-claro);
+    border: 2px solid var(--verde-mais-escuro);
+    border-radius: 15px;
+}
+
+.instagram{
+    display: flex;
+    margin: .5rem;
+    width: 80%;
+    padding: .5rem;
+    background: url(../imagem/instagram.png) center center no-repeat;
+    background-size: 5%;
+}
+
+.instagram .instagram-slz, .instagram .instagram-atins{
+    display: flex;
+    justify-content: center;
+    background-color: var(--verde-mais-claro);
+    padding: 1rem;
+    border: 2px solid var(--verde-mais-escuro);
+    border-radius: 15px;
+    width: 45%;
+}
+
+.instagram .instagram-slz label, .instagram .instagram-atins label, .rede-social label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.gota {
+    font-size: 2rem;
+    border: 3px solid var(--verde-super-escuro);
+    border-radius: 15px;
+    margin: 1rem;
+    padding: 1rem;
+    text-shadow: 1px 1px black;
+}
+
 
 }
 

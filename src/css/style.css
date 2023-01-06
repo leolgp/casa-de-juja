@@ -136,7 +136,7 @@
 
 .institucional .juja .texto p span {
     font-family: 'Lobster', cursive;
-    font-size: 5.5rem;
+    font-size: 3.5rem;
     color: var(--verde-super-claro);
     filter: drop-shadow(0px 2px 3px black);
 }
@@ -156,8 +156,8 @@
 .cardapio .titulo {
     font-family: 'Lobster', cursive;
     background-color: var(--verde-super-claro);
-    color: var(--verde);
-    text-shadow: 1px 1px var(--verde-super-escuro);
+    color: white;
+    text-shadow: 4px 2px var(--verde-super-escuro);
     font-size: 6rem;
     border: 3px solid var(--verde-super-claro);
     width: 100%;
@@ -195,17 +195,7 @@ label {
     cursor: pointer;
 }
 
-.cardapio .pratos .ingredientes .prato ul:nth-child(2) {
-    color: white;
-    padding: .5rem;
-    font-size: 2rem;
-    background-color: transparent;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    text-shadow: 1px 1px var(--verde-mais-escuro);
-    border: 2px solid var(--verde-cardapio-borda);
-    max-width: 70%;
-}
+
 
 .cardapio .pratos .ingredientes {
     display: none;
@@ -215,16 +205,25 @@ label {
     font-size: 3rem;
     font-weight: 100;
     color: white;
-    background-color: rgb(21, 129, 161);
+    background-color: var(--verde-cardapio-fundo);
     width: fit-content;
     padding: 2.5rem;
     margin: 1.5rem;
     border-radius: 15px;
     font-family: 'Norican', cursive;
     text-shadow: 1px 1px var(--verde-mais-escuro);
-    border: 1px solid var(--verde-super-claro);
+    border: 1px solid var(--verde-cardapio-borda);
     width: 95%;
     position: relative;
+}
+
+.cardapio .pratos .ingredientes .prato ul:nth-child(2) {
+    color: white;
+    border: 1px solid var(--verde-cardapio-borda);
+    padding: 1.5rem;
+    font-size: 2rem;
+    background-color: transparent;
+    max-width: 70%;
 }
 
 .cardapio .pratos .ingredientes .prato li span {
@@ -281,7 +280,7 @@ label {
 }
 
 #duo {
-    max-width: 22rem;
+    max-width: 18rem;
     display: inline-block;
     position: absolute;
     top: 0;
@@ -343,8 +342,6 @@ label {
 }
 
 /* ----------Footer--------- */
-
-
 
 footer {
     display: flex;
