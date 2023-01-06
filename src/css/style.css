@@ -19,8 +19,7 @@
     src: url(../fonts/MISTRAL.TTF);
 }
 
-.logo h2,
-.logo h3 {
+.logo h2{
     font-family: 'Medula One', cursive;
     font-weight: 100;
     font-size: 5em;
