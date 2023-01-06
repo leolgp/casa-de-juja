@@ -11,7 +11,7 @@
     animation: logo 1.2s ease-in-out;
     animation-delay: 1s;
     margin: -1rem 0 1.5rem 0;
-    color: var(--verde-super-escuro);
+    color: var(--verde-escuro);
 }
 
 @font-face {
@@ -19,21 +19,22 @@
     src: url(../fonts/MISTRAL.TTF);
 }
 
-.logo h2, .logo h3 {
+.logo h2,
+.logo h3 {
     font-family: 'Medula One', cursive;
     font-weight: 100;
-    font-size:  5em;
+    font-size: 5em;
     height: 4rem;
-    color: var(--verde-mais-escuro);
+    color: var(--verde-claro);
 }
 
-.logo h2{
+.logo h2 {
     animation: subtitulo 1s ease;
     margin-bottom: 8rem;
 }
 
-.logo .subtitulo{
-  margin-top: -2rem;
+.logo .subtitulo {
+    margin-top: -2rem;
 }
 
 .logo .faca {
@@ -41,26 +42,27 @@
     margin: 0 auto;
 }
 
-.logo .faca img{
-    background: url(../imagem/faca.svg);    
+.logo .faca img {
+    background: url(../imagem/faca.svg);
 }
 
-.logo .faca.cima img{
+.logo .faca.cima img {
     animation: upArrow 1.5s ease-in-out;
 }
-.logo .faca.baixo img{
+
+.logo .faca.baixo img {
     animation: downArrow 1.5s ease-in-out;
 }
 
 /* institucional */
 
-.institucional{
+.institucional {
     text-align: center;
-    position: relative;    
+    position: relative;
     animation: millor 1.2s ease-in-out;
 }
 
-.institucional::before{
+.institucional::before {
     content: '';
     background-color: var(--verde);
     width: 100%;
@@ -78,35 +80,35 @@
     color: var(--verde-super-claro);
 }
 
-.institucional>p::before{
+.institucional>p::before {
     content: open-quote;
 }
 
-.institucional>p::after{
+.institucional>p::after {
     content: close-quote;
 }
 
-.institucional cite{
-    font-family: 'Lobster', cursive; 
-text-align: right;
-color: var(--verde-super-claro);
-font-size: 3.5rem;
-text-shadow: 2px 2px var(--verde-escuro);
-background-color: var(--verde-cardapio-fundo);
-border-radius: 15px;
-border: 3px solid var(--verde-cardapio-borda);
-padding: 1rem;
+.institucional cite {
+    font-family: 'Lobster', cursive;
+    text-align: right;
+    color: var(--verde-super-claro);
+    font-size: 3.5rem;
+    text-shadow: 2px 2px var(--verde-escuro);
+    background-color: var(--verde-cardapio-fundo);
+    border-radius: 15px;
+    border: 3px solid var(--verde-cardapio-borda);
+    padding: 1rem;
 }
 
-.juja{
+.juja {
     margin: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.juja img{
+.juja img {
     margin: 2rem;
     padding: 3rem;
     max-width: 80%;
@@ -114,18 +116,18 @@ padding: 1rem;
     filter: drop-shadow(0px 5px 3px black);
 }
 
-.institucional p{
+.institucional p {
     animation: logo 1.2s ease-in-out;
 }
 
-.institucional .juja .texto{
+.institucional .juja .texto {
     display: inline-block;
     max-width: 70%;
     text-align: center;
     margin: auto;
 }
 
-.institucional .juja .texto p{
+.institucional .juja .texto p {
     font-family: 'Poppins', sans-serif;
     font-size: 3.5rem;
     text-align: justify;
@@ -133,7 +135,7 @@ padding: 1rem;
     width: 90%;
 }
 
-.institucional .juja .texto p span{
+.institucional .juja .texto p span {
     font-family: 'Lobster', cursive;
     font-size: 5.5rem;
     color: var(--verde-super-claro);
@@ -144,7 +146,7 @@ padding: 1rem;
 
 /* -----------CARDAPIO----------- */
 
-.cardapio{
+.cardapio {
     background-color: var(--verde);
     margin: 5rem;
     position: relative;
@@ -152,8 +154,8 @@ padding: 1rem;
 
 }
 
-.cardapio .titulo{
-    font-family: 'Lobster', cursive; 
+.cardapio .titulo {
+    font-family: 'Lobster', cursive;
     background-color: var(--verde-super-claro);
     color: var(--verde);
     text-shadow: 1px 1px var(--verde-super-escuro);
@@ -163,49 +165,50 @@ padding: 1rem;
     padding: 1.5rem;
 }
 
-.cardapio h2, .cardapio h3{
-    font-family: 'Lobster', cursive; 
+.cardapio h2,
+.cardapio h3 {
+    font-family: 'Lobster', cursive;
     color: white;
     font-weight: 100;
     text-shadow: 1px 1px var(--verde-super-escuro);
     font-size: 5rem;
     padding: 1rem;
-    text-align: center;   
+    text-align: center;
 }
 
-.cardapio h3{
+.cardapio h3 {
     background-color: var(--verde-cardapio-fundo);
     font-size: 2rem;
     color: white;
     white-space: nowrap;
-    max-height:5rem ;
+    max-height: 5rem;
     border-radius: 15px;
     border: 1px solid var(--verde-cardapio-borda);
     width: 70%;
     margin: 0 auto;
 }
 
-input{
+input {
     display: none;
 }
 
-label{
+label {
     cursor: pointer;
 }
 
 .cardapio .pratos .ingredientes .prato ul:nth-child(2) {
-   color: white;
-   padding: .5rem;
-   font-size: 2rem;
-   background-color: transparent;
-   font-family: 'Poppins', sans-serif;
-   font-weight: 600;
-   text-shadow: 1px 1px var(--verde-mais-escuro);
-   border: 2px solid var(--verde-cardapio-borda);
-   max-width: 70%;
+    color: white;
+    padding: .5rem;
+    font-size: 2rem;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-shadow: 1px 1px var(--verde-mais-escuro);
+    border: 2px solid var(--verde-cardapio-borda);
+    max-width: 70%;
 }
 
-.cardapio .pratos .ingredientes{
+.cardapio .pratos .ingredientes {
     display: none;
 }
 
@@ -225,11 +228,11 @@ label{
     position: relative;
 }
 
-.cardapio .pratos .ingredientes .prato li span{
+.cardapio .pratos .ingredientes .prato li span {
     font-size: 1.3rem;
 }
 
-.cardapio .pratos .ingredientes .prato bold{
+.cardapio .pratos .ingredientes .prato bold {
     font-size: 1.5rem;
     background-color: var(--verde-importado);
     border-radius: 10px;
@@ -238,7 +241,7 @@ label{
     font-weight: 600;
 }
 
-.cardapio .pratos .ingredientes .prato li p{
+.cardapio .pratos .ingredientes .prato li p {
     background-color: var(--verde);
     border-radius: 15px;
     width: 70%;
@@ -248,11 +251,11 @@ label{
     border: 1px solid var(--verde-cardapio-borda);
 }
 
-.cardapio .pratos input:checked ~ label .ingredientes {
+.cardapio .pratos input:checked~label .ingredientes {
     display: block;
 }
 
-#Lua{
+#Lua {
     font-size: 1.5rem;
     background-color: var(--verde-mais-claro);
     border-radius: 10px;
@@ -262,7 +265,7 @@ label{
     border: 1px solid var(--verde-super-escuro);
 }
 
-#selo{
+#selo {
     background: url(../imagem/selo.png) top right no-repeat;
     width: 125px;
     height: 184px;
@@ -273,12 +276,12 @@ label{
     margin: 2rem;
 }
 
-#selo-prato{
+#selo-prato {
     padding: 1rem;
     max-width: 60px;
 }
 
-#duo{
+#duo {
     max-width: 22rem;
     display: inline-block;
     position: absolute;
@@ -287,13 +290,13 @@ label{
     margin: 2rem;
 }
 
-.receita-premiada{
+.receita-premiada {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#lagosta{
+#lagosta {
     max-width: 22rem;
     display: inline-block;
     position: absolute;
@@ -302,7 +305,7 @@ label{
     margin: 2rem;
 }
 
-#delicias-do-mar{
+#delicias-do-mar {
     max-width: 29rem;
     display: inline-block;
     position: absolute;
@@ -313,7 +316,7 @@ label{
 
 /* ----------Restaurante--------- */
 
-.fotos{
+.fotos {
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -323,11 +326,11 @@ label{
     border: 10px solid white;
 }
 
-.quadro{
+.quadro {
     max-width: 450px;
 }
 
-.peixe{
+.peixe {
     height: 510px;
     width: 510px;
     position: absolute;
@@ -344,80 +347,127 @@ label{
 
 
 
-footer{
+footer {
     display: flex;
-    height: 300px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-left: 10%;
-    margin: 4rem 0;
+    margin: 8rem 0;
     color: white;
 }
 
-footer h2, footer h3, footer h4{
-    font-family: 'Lobster', cursive; 
+footer h2,
+footer h3,
+footer h4 {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
     color: white;
-    font-weight: 100;
     text-shadow: 1px 1px var(--verde-cardapio-borda);
     padding: 1rem;
     text-shadow: 1px 1px var(--verde-mais-claro);
 }
 
-footer h2{
+footer h2 {
     font-size: 3rem;
     background-color: var(--verde-mais-claro);
     text-align: center;
     border-radius: 15px;
     width: fit-content;
     border: 3px solid var(--verde-super-escuro);
-
+    margin: 2rem;
 }
-footer h3{
+
+footer h3 {
     font-size: 2.5rem;
 }
-footer h4{
+
+footer h4 {
     font-size: 2rem;
 }
 
-.redes-sociais{
+.redes-sociais {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: var(--verde-cardapio-fundo);
+    border-radius: 15px;
+    border: 2px solid var(--verde-cardapio-borda);
+    padding: .5rem;
+    margin: 1rem;
+    width: 80%;
+    position: relative;
 }
 
-.redes-sociais h3, .redes-sociais h4{
-    font-family: Poppins, sans-serif;
-    font-weight: 600;
+.redes-sociais #tigela{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 30%;
+    padding: 3rem;
 }
 
-.redes-sociais img{
+.redes-sociais #camarao{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 21%;
+    padding: 3rem 0;
+}
+
+.redes-sociais img {
     width: 50px;
-    
 }
 
-.insta{
-display: flex;
-align-items: center;
-justify-content: center;
-
-}
-
-.zap{
+.rede-social{
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
+    margin: 2rem;
+    width: 30%;
+    padding: 1rem;
+    background-color: var(--verde-mais-claro);
+    border: 3px solid var(--verde-mais-escuro);
+    border-radius: 15px;
 }
 
-.gota{
+.instagram{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+    width: 60%;
+    padding: 1rem;
+    background: url(../imagem/instagram.png) center center no-repeat;
+    background-size: 5%;
+}
+
+.instagram .instagram-slz, .instagram .instagram-atins{
+    display: flex;
+    justify-content: center;
+    background-color: var(--verde-mais-claro);
+    padding: 1rem;
+    border: 3px solid var(--verde-mais-escuro);
+    border-radius: 15px;
+    width: 45%;
+}
+
+.instagram .instagram-slz label, .instagram .instagram-atins label, .rede-social label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.gota {
     font-size: 2rem;
     background-color: var(--verde-mais-claro);
     text-align: center;
     border: 3px solid var(--verde-super-escuro);
     border-radius: 15px;
     width: fit-content;
-    font-family: 'Lobster', cursive; 
+    font-family: 'Lobster', cursive;
     margin: 1rem;
     padding: 1rem;
     text-shadow: 1px 1px black;
