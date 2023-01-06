@@ -43,21 +43,21 @@
 @keyframes logo{
     0%{
         opacity: 0;
-        color: black;
+        color: var(--verde-super-claro);
     }
     50%{
         opacity: 1;
-        color: rgba(211,249,7,1);
+        color: var(--verde);
     }
     100%{
         opacity: 1;
-        color: black;
+        color: var(--verde-super-escuro);
     }
 }
 
 @keyframes subtitulo{
     0%{
-    color: rgba(211,249,7,1); 
+    color: var(--verde); 
     font-size: 1em;
     } 
     100%{

@@ -6,6 +6,19 @@
     text-decoration: none;
 }
 
+:root{
+    --verde-super-claro: #a6d3de;
+    --verde-mais-claro: #83abb5;
+    --verde-claro: #6799a4;
+    --verde: #026773;
+    --verde-escuro: #004541;
+    --verde-mais-escuro:#003e3d;
+    --verde-super-escuro:#012e2d;
+    --verde-cardapio-fundo:#1581a1;
+    --verde-cardapio-borda:#00ffa1;
+    --verde-importado: #034949;
+}
+
 a{
     color: white;
 }
@@ -22,11 +35,9 @@ body{
     max-width: 100vw;
     margin: 0 auto;
     font-family: 'Poppings', sans-serif;
-background: linear-gradient(0deg, rgba(251,51,7,1) 0%, rgba(232,249,7,1) 95%);
+background: background: var(--verde-super-claro);
+background: linear-gradient(0deg, var(--verde-super-escuro) 0%, var(--verde-super-claro) 100%);;
 }
-
-
-
 
 /* 
 outras fontes disponíveis:

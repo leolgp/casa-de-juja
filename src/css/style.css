@@ -11,6 +11,7 @@
     animation: logo 1.2s ease-in-out;
     animation-delay: 1s;
     margin: -1rem 0 1.5rem 0;
+    color: var(--verde-super-escuro);
 }
 
 @font-face {
@@ -23,6 +24,7 @@
     font-weight: 100;
     font-size:  5em;
     height: 4rem;
+    color: var(--verde-mais-escuro);
 }
 
 .logo h2{
@@ -60,9 +62,9 @@
 
 .institucional::before{
     content: '';
-    background-color: rgb(179, 155, 18);
+    background-color: var(--verde);
     width: 100%;
-    height: 1px;
+    height: 2px;
     display: block;
     position: absolute;
     top: 0;
@@ -72,7 +74,28 @@
     font-family: 'Poppings', sans-serif;
     font-size: 2.8rem;
     padding: 3rem 0;
-    background-color: cornsilk;
+    background-color: var(--verde-escuro);
+    color: var(--verde-super-claro);
+}
+
+.institucional>p::before{
+    content: open-quote;
+}
+
+.institucional>p::after{
+    content: close-quote;
+}
+
+.institucional cite{
+    font-family: 'Lobster', cursive; 
+text-align: right;
+color: var(--verde-super-claro);
+font-size: 3.5rem;
+text-shadow: 2px 2px var(--verde-escuro);
+background-color: var(--verde-cardapio-fundo);
+border-radius: 15px;
+border: 3px solid var(--verde-cardapio-borda);
+padding: 1rem;
 }
 
 .juja{
@@ -104,35 +127,38 @@
 
 .institucional .juja .texto p{
     font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
+    font-size: 3.5rem;
     text-align: justify;
-    margin: 1rem 0;
+    margin: 5rem 0;
     width: 90%;
 }
 
-.institucional .millor span{
-        font-family: 'Lobster', cursive; 
-    text-align: right;
-    color: black;
-    font-size: 3rem;
-    text-shadow: 3px 3px rgb(241, 226, 7);
+.institucional .juja .texto p span{
+    font-family: 'Lobster', cursive;
+    font-size: 5.5rem;
+    color: var(--verde-super-claro);
+    filter: drop-shadow(0px 2px 3px black);
 }
+
+
 
 /* -----------CARDAPIO----------- */
 
 .cardapio{
-    background-color: rgb(89, 190, 221);
+    background-color: var(--verde);
     margin: 5rem;
     position: relative;
+    border: 1px solid var(--verde-mais-claro);
+
 }
 
 .cardapio .titulo{
     font-family: 'Lobster', cursive; 
-    background-color: white;
-    color: rgb(89, 190, 221);
-    text-shadow: 1px 1px black;
+    background-color: var(--verde-super-claro);
+    color: var(--verde);
+    text-shadow: 1px 1px var(--verde-super-escuro);
     font-size: 6rem;
-    border: 2px solid black;
+    border: 3px solid var(--verde-super-claro);
     width: 100%;
     padding: 1.5rem;
 }
@@ -141,20 +167,20 @@
     font-family: 'Lobster', cursive; 
     color: white;
     font-weight: 100;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px var(--verde-super-escuro);
     font-size: 5rem;
     padding: 1rem;
     text-align: center;   
 }
 
 .cardapio h3{
-    background-color: rgb(21, 129, 161);
+    background-color: var(--verde-cardapio-fundo);
     font-size: 2rem;
     color: white;
     white-space: nowrap;
     max-height:5rem ;
     border-radius: 15px;
-    border: 1px solid white;
+    border: 1px solid var(--verde-cardapio-borda);
     width: 70%;
     margin: 0 auto;
 }
@@ -174,8 +200,8 @@ label{
    background-color: transparent;
    font-family: 'Poppins', sans-serif;
    font-weight: 600;
-   text-shadow: 1px 1px black;
-   border: 2px solid aqua;
+   text-shadow: 1px 1px var(--verde-mais-escuro);
+   border: 2px solid var(--verde-cardapio-borda);
    max-width: 70%;
 }
 
@@ -193,8 +219,8 @@ label{
     margin: 1.5rem;
     border-radius: 15px;
     font-family: 'Norican', cursive;
-    text-shadow: 1px 1px black;
-    border: 1px solid white;
+    text-shadow: 1px 1px var(--verde-mais-escuro);
+    border: 1px solid var(--verde-super-claro);
     width: 95%;
     position: relative;
 }
@@ -205,7 +231,7 @@ label{
 
 .cardapio .pratos .ingredientes .prato bold{
     font-size: 1.5rem;
-    background-color: rgb(3, 73, 73);
+    background-color: var(--verde-importado);
     border-radius: 10px;
     padding: .5rem;
     font-family: 'Poppins', sans-serif;
@@ -213,13 +239,13 @@ label{
 }
 
 .cardapio .pratos .ingredientes .prato li p{
-    background-color:  rgb(16, 92, 116);
+    background-color: var(--verde);
     border-radius: 15px;
     width: 70%;
     font-size: 1.5rem;
     padding: 1rem;
     margin: 1rem;
-    border: 1px solid aqua;
+    border: 1px solid var(--verde-cardapio-borda);
 }
 
 .cardapio .pratos input:checked ~ label .ingredientes {
@@ -228,11 +254,12 @@ label{
 
 #Lua{
     font-size: 1.5rem;
-    background-color: rgb(44, 136, 241);
+    background-color: var(--verde-mais-claro);
     border-radius: 10px;
     padding: .5rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    border: 1px solid var(--verde-super-escuro);
 }
 
 #selo{
@@ -332,18 +359,18 @@ footer h2, footer h3, footer h4{
     font-family: 'Lobster', cursive; 
     color: white;
     font-weight: 100;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px var(--verde-cardapio-borda);
     padding: 1rem;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px var(--verde-mais-claro);
 }
 
 footer h2{
     font-size: 3rem;
-    background-color: orange;
+    background-color: var(--verde-mais-claro);
     text-align: center;
     border-radius: 15px;
     width: fit-content;
-    border: 3px solid rgb(226, 6, 6);
+    border: 3px solid var(--verde-super-escuro);
 
 }
 footer h3{
@@ -385,9 +412,9 @@ justify-content: center;
 
 .gota{
     font-size: 2rem;
-    background-color: orange;
+    background-color: var(--verde-mais-claro);
     text-align: center;
-    border: 3px solid rgb(226, 6, 6);
+    border: 3px solid var(--verde-super-escuro);
     border-radius: 15px;
     width: fit-content;
     font-family: 'Lobster', cursive; 
