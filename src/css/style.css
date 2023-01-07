@@ -394,6 +394,7 @@ footer h4 {
     margin: 1rem;
     width: 80%;
     position: relative;
+    text-align: center;
 }
 
 .redes-sociais #tigela{
@@ -402,6 +403,7 @@ footer h4 {
     right: 0;
     width: 30%;
     padding: 3rem;
+    filter: drop-shadow(0px 5px 3px black);
 }
 
 .redes-sociais #camarao{
@@ -410,11 +412,11 @@ footer h4 {
     left: 0;
     width: 21%;
     padding: 3rem 0;
+    filter: drop-shadow(0px 5px 3px black);
 }
 
 .redes-sociais img {
     width: 50px;
-    filter: drop-shadow(0px 5px 3px black);
 }
 
 .rede-social{
