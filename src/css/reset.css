@@ -36,7 +36,7 @@ body{
     margin: 0 auto;
     font-family: 'Poppings', sans-serif;
 background: background: var(--verde-super-claro);
-background: linear-gradient(0deg, var(--verde-super-escuro) 0%, var(--verde-super-claro) 100%);;
+background: linear-gradient(0deg, var(--verde-super-escuro) 0%, var(--verde-super-claro) 100%);
 }
 
 /* 
